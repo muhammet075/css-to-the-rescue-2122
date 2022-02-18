@@ -1,0 +1,318 @@
+:root {
+    --wit: #ffff;
+    --zwart: hotpink;
+    --paars: #474787;
+    --lichtpaars: #8484cd;
+    --grijs: #999999;
+    --lichtgrijs: #efefef;
+    --donkergrijs: #333333;
+    --middengrijs: #4d4d4d;
+    --groen: #348C31;
+}
+
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+
+#buttons{
+    position: absolute;
+    z-index: 999999999999;
+    top: 0;
+    left: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    background-color: var(--donkergrijs);
+}
+
+main {
+    width: 1400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #90e2f0;
+    position: relative;
+}
+
+
+
+
+/* BEGIN LANDINGSBAAN */
+
+#eerste div:nth-child(1) {
+    background-color: #90e2f0;
+    width: 100%;
+    height: 170px;
+    position: absolute;
+    z-index: 99999;
+    top: 31px;
+}
+
+#eerste div:nth-child(2) {
+    background-color: green;
+    width: 100%;
+    height: 220px;
+    top: 140px;
+    position: absolute;
+    transform: perspective(900px) rotateX(60deg);
+}
+
+#eerste div:nth-child(2) ul:nth-child(1) {
+    background-color: var(--middengrijs);
+    position: absolute;
+    width: 75%;
+    height: 220px;
+    left: 0;
+    right: 0;
+}
+
+#eerste div:nth-child(2) ul:nth-child(1) li:nth-child(1) {
+    background-color: white;
+    position: absolute;
+    height: 220px;
+    width: 20px;
+    left: 20px;
+}
+
+#eerste div:nth-child(2) ul:nth-child(1) li:nth-child(2) {
+    background-color: white;
+    position: absolute;
+    height: 220px;
+    width: 20px;
+    right: 20px;
+}
+
+#eerste div:nth-child(2) ul:nth-child(2) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1000px;
+    display: grid;
+    top: -500px;
+}
+
+#eerste div:nth-child(2) ul:nth-child(2) li {
+    background-color: white;
+    width: 50px;
+    height: 100px;
+    margin: 50px auto;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0px;
+}
+
+/* EINDE LANDINGSBAAN */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BEGIN COCKPIT */
+#tweede ul {
+    background-color: var(--donkergrijs);
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 311px;
+    z-index: 99999999;
+}
+
+#tweede ul li {
+    display: block;
+    position: absolute;
+    background-color: var(--donkergrijs);
+}
+
+#tweede ul li:nth-child(1) {
+    top: -400px;
+    width: 100%;
+    height: 200px;
+}
+
+#tweede ul li:nth-child(2) {
+    top: -200px;
+    width: 25px;
+    height: 200px;
+    left: 0;
+    right: 0;
+}
+
+#tweede ul li:nth-child(3) {
+    top: -212px;
+    width: 25px;
+    height: 225px;
+    right: 200px;
+    transform: rotate(10deg);
+}
+
+#tweede ul li:nth-child(4) {
+    top: -212px;
+    width: 25px;
+    height: 225px;
+    left: 200px;
+    transform: rotate(350deg);
+}
+
+#tweede ul li:nth-child(5) {
+    top: -98px;
+    width: 70px;
+    height: 240px;
+    left: 89px;
+    transform: rotate(80deg);
+}
+
+#tweede ul li:nth-child(6) {
+    top: -292px;
+    width: 41px;
+    height: 196px;
+    left: 80px;
+    transform: rotate(84deg);
+}
+
+
+#tweede ul li:nth-child(7) {
+    top: -292px;
+    width: 41px;
+    height: 196px;
+    right: 80px;
+    transform: rotate(276deg);
+}
+
+
+#tweede ul li:nth-child(8) {
+    top: -98px;
+    width: 70px;
+    height: 240px;
+    right: 89px;
+    transform: rotate(280deg);
+}
+
+#tweede ul li:nth-child(9) {
+    top: -30px;
+    width: 945px;
+    height: 50px;
+    right: 233px;
+}
+
+#tweede ul li:nth-child(10) {
+    top: -458px;
+    width: 36px;
+    height: 490px;
+    left: 432px;
+    transform: rotate(88deg);
+}
+
+
+#tweede ul li:nth-child(11) {
+    top: -458px;
+    width: 36px;
+    height: 490px;
+    right: 432px;
+    transform: rotate(272deg);
+}
+
+#tweede ul li:nth-child(12) {
+    top: 10px;
+    width: 100%;
+    height: 200px;
+    right: 0px;
+}
+
+#tweede ul li:nth-child(13) {
+    top: -208px;
+    width: 6px;
+    height: 45px;
+    left: 0px;
+}
+
+#tweede ul li:nth-child(14) {
+    top: -208px;
+    width: 6px;
+    height: 45px;
+    right: 0px;
+}
+
+#tweede ul:nth-child(2) li:nth-child(1) {
+    background-color: var(--grijs);
+    position: absolute;
+    top: -20px;
+    width: 950px;
+    height: 170px;
+    left: 0;
+    right: 0;
+}
+
+/* EINDE COCKPIT */
+
+
+#derde div{
+    background-color: #90e2f0;
+    width: 100%;
+    height: 170px;
+    position: absolute;
+    z-index: 99999;
+    top: 31px;
+}
+
+
+
+input#rad2:checked + #derde div {
+    animation: opstijgAnimatie 30s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opstijgAnimatie {
+    0% {
+        height: 170px;
+    }
+
+    100% {
+        height: 1000px;
+    }
+}
+
+
+input#rad1:checked + #eerste div:nth-child(2) ul:nth-child(2) {
+    animation: landingsbaanOpstijgen 2s infinite;
+
+}
+
+@keyframes landingsbaanOpstijgen {
+    0% {
+        top: -1500px;
+    }
+    
+    50%{
+        top: 0px;
+    }
+    
+    100% {
+        top: -1500px;
+    }
+}
