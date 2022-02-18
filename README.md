@@ -4,6 +4,7 @@
 ### Week 1
 Tijdens de eerste week van het vak had ik besloten om de bedieningspaneel case te kiezen. Ik dacht er aan om een interface te bouwen waarbij de gebruiker een object kan bedienen. Toen besloot ik om een vliegtuig cockpit te gaan bouwen. Na mijn besluit ging ik aan de slag met het knutselen van het vliegtuig in CSS. De cockpit is een div met daarin verschillende ul'letjes en de li's zijn de ramen om naar buiten te kijken. Ook had ik een begin gemaakt aan de animaties, ik was bezig met het opstijging proces.
 <img src="https://i.ibb.co/tBbGCqL/Schermafbeelding-2022-02-18-om-12-02-17.png" alt="cockpit"/>
+<br/><br/>
 
 
 
@@ -12,5 +13,6 @@ In week 2 ben ik verder gaan animeren en gaan stijlen van de cockpit. Ik heb met
 
 <img src="https://i.ibb.co/Gsbby4M/Schermafbeelding-2022-02-18-om-12-07-00.png" alt="cockpit">
 <img src="https://i.ibb.co/SJCv5kZ/Schermafbeelding-2022-02-18-om-12-07-13.png" alt="cockpit"
-
+<br/><br/>
+     
 ### Week 3
