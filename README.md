@@ -1,4 +1,4 @@
-# Eindopdracht: Stijlvast bedieningspaneel 
+# Stijlvast bedieningspaneel 
 
 Voor het eindopdracht voor het vak CSS To The Rescue heb ik de case 'Stijlvast bedieningspaneel' gekozen. Ik heb een interactieve funcitonerende vliegtuig cockpit gemaakt met pure HTML en CSS. Voor dit project is 0 code JavaScript gebruikt. De gebruiker kan gas geven, opstijgen, verlichting aan/uit zetten, vliegtuig laten draaien en de ruitenwissers aan/uit zetten.
 
