@@ -1,318 +1,1112 @@
 :root {
+    --luchtKleur: skyblue;
+    --wolkKleur: #ffffffcf;
     --wit: #ffff;
     --zwart: hotpink;
     --paars: #474787;
     --lichtpaars: #8484cd;
     --grijs: #999999;
     --lichtgrijs: #efefef;
-    --donkergrijs: #333333;
+    --donkergrijs: #494949;
     --middengrijs: #4d4d4d;
-    --groen: #348C31;
+    --groen1: #3a9d09;
+    --groen2: #41ab0c;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --luchtKleur: #002d3f;
+        --wolkKleur: #232323d9;
+        --groen1: #174501;
+        --groen2: #1e5304;
+    }
 }
 
 * {
     padding: 0;
     margin: 0 auto;
-}
-
-#buttons{
-    position: absolute;
-    z-index: 999999999999;
-    top: 0;
-    left: 0;
-}
-
-ul li {
-    list-style: none;
+    font-family: Arial;
 }
 
 body {
-    background-color: var(--donkergrijs);
+    background-color: var(--donkergrijs)
+}
+
+input {
+    position: absolute;
+    z-index: 99999;
 }
 
 main {
+    position: relative;
     width: 1400px;
-    height: 400px;
-    margin: auto;
-    margin-top: 100px;
-    background-color: #90e2f0;
+    margin-top: -80px;
+}
+
+ul {
+    list-style: none;
+}
+
+main > div:nth-of-type(1) {
+    z-index: 9999;
+}
+
+main > div:nth-of-type(1)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 800px;
+    background-color: #494949;
+    left: -80px;
+    top: -100px;
+    z-index: 9999999;
+}
+
+main > div:nth-of-type(1)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 800px;
+    background-color: #494949;
+    right: -80px;
+    top: -100px;
+    z-index: 9999999;
+}
+
+main > div:nth-of-type(1) ul:nth-child(1) {
     position: relative;
 }
 
-
-
-
-/* BEGIN LANDINGSBAAN */
-
-#eerste div:nth-child(1) {
-    background-color: #90e2f0;
-    width: 100%;
-    height: 170px;
-    position: absolute;
-    z-index: 99999;
-    top: 31px;
-}
-
-#eerste div:nth-child(2) {
-    background-color: green;
-    width: 100%;
-    height: 220px;
-    top: 140px;
-    position: absolute;
-    transform: perspective(900px) rotateX(60deg);
-}
-
-#eerste div:nth-child(2) ul:nth-child(1) {
-    background-color: var(--middengrijs);
-    position: absolute;
-    width: 75%;
-    height: 220px;
-    left: 0;
-    right: 0;
-}
-
-#eerste div:nth-child(2) ul:nth-child(1) li:nth-child(1) {
-    background-color: white;
-    position: absolute;
-    height: 220px;
-    width: 20px;
-    left: 20px;
-}
-
-#eerste div:nth-child(2) ul:nth-child(1) li:nth-child(2) {
-    background-color: white;
-    position: absolute;
-    height: 220px;
-    width: 20px;
-    right: 20px;
-}
-
-#eerste div:nth-child(2) ul:nth-child(2) {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 1000px;
-    display: grid;
-    top: -500px;
-}
-
-#eerste div:nth-child(2) ul:nth-child(2) li {
-    background-color: white;
-    width: 50px;
-    height: 100px;
-    margin: 50px auto;
-    z-index: 999;
-    left: 0;
-    right: 0;
-    top: 0px;
-}
-
-/* EINDE LANDINGSBAAN */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* BEGIN COCKPIT */
-#tweede ul {
-    background-color: var(--donkergrijs);
-    width: 100%;
-    height: 300px;
-    position: absolute;
-    top: 311px;
-    z-index: 99999999;
-}
-
-#tweede ul li {
+main > div:nth-of-type(1) ul:nth-child(1)::after {
+    content: "";
     display: block;
     position: absolute;
-    background-color: var(--donkergrijs);
-}
-
-#tweede ul li:nth-child(1) {
-    top: -400px;
-    width: 100%;
-    height: 200px;
-}
-
-#tweede ul li:nth-child(2) {
-    top: -200px;
-    width: 25px;
-    height: 200px;
-    left: 0;
-    right: 0;
-}
-
-#tweede ul li:nth-child(3) {
-    top: -212px;
-    width: 25px;
-    height: 225px;
-    right: 200px;
-    transform: rotate(10deg);
-}
-
-#tweede ul li:nth-child(4) {
-    top: -212px;
-    width: 25px;
-    height: 225px;
-    left: 200px;
-    transform: rotate(350deg);
-}
-
-#tweede ul li:nth-child(5) {
-    top: -98px;
-    width: 70px;
-    height: 240px;
-    left: 89px;
-    transform: rotate(80deg);
-}
-
-#tweede ul li:nth-child(6) {
-    top: -292px;
-    width: 41px;
-    height: 196px;
-    left: 80px;
-    transform: rotate(84deg);
-}
-
-
-#tweede ul li:nth-child(7) {
-    top: -292px;
-    width: 41px;
-    height: 196px;
-    right: 80px;
-    transform: rotate(276deg);
-}
-
-
-#tweede ul li:nth-child(8) {
-    top: -98px;
-    width: 70px;
-    height: 240px;
-    right: 89px;
-    transform: rotate(280deg);
-}
-
-#tweede ul li:nth-child(9) {
-    top: -30px;
-    width: 945px;
+    width: 50px;
     height: 50px;
-    right: 233px;
+    background-color: #494949;
+    left: 0;
+    top: 100px;
+    z-index: 9999999;
 }
 
-#tweede ul li:nth-child(10) {
-    top: -458px;
-    width: 36px;
-    height: 490px;
-    left: 432px;
-    transform: rotate(88deg);
-}
-
-
-#tweede ul li:nth-child(11) {
-    top: -458px;
-    width: 36px;
-    height: 490px;
-    right: 432px;
-    transform: rotate(272deg);
-}
-
-#tweede ul li:nth-child(12) {
-    top: 10px;
-    width: 100%;
-    height: 200px;
-    right: 0px;
-}
-
-#tweede ul li:nth-child(13) {
-    top: -208px;
-    width: 6px;
-    height: 45px;
-    left: 0px;
-}
-
-#tweede ul li:nth-child(14) {
-    top: -208px;
-    width: 6px;
-    height: 45px;
-    right: 0px;
-}
-
-#tweede ul:nth-child(2) li:nth-child(1) {
-    background-color: var(--grijs);
+main > div:nth-of-type(1) ul:nth-child(1) li {
+    background-color: var(--donkergrijs);
     position: absolute;
-    top: -20px;
-    width: 950px;
-    height: 170px;
+}
+
+main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(1) {
+    width: 100%;
+    height: 100px;
+    z-index: -999999;
+}
+
+main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(2) {
+    width: 100%;
+    height: 350px;
+    top: -168px;
+    border-radius: 500% / 203%;
+    z-index: 9999;
+    border-bottom: 7px solid #9b9b9b;
+}
+
+main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(3) {
+    margin: auto;
+    width: 100%;
+    height: 1000px;
+    top: 400px;
+}
+
+main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(4) {
+    width: 100%;
+    height: 100px;
+    top: 350px;
+    border-radius: 200% / 200%;
+}
+
+main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(5) {
+    width: 50px;
+    height: 500px;
+    top: 0px;
+    left: 0;
+    border-right: 5px solid #9b9b9b;
+}
+
+main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(6) {
+    width: 50px;
+    height: 500px;
+    top: 0px;
+    right: 0;
+    border-left: 5px solid #9b9b9b;
+}
+
+main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(7) {
+    width: 20px;
+    height: 500px;
+    top: 0px;
+    right: 250px;
+    transform: rotate(5deg);
+    border: 5px solid #9b9b9b;
+}
+
+main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(8) {
+    width: 20px;
+    height: 500px;
+    top: 0px;
+    left: 250px;
+    transform: rotate(355deg);
+    border: 5px solid #9b9b9b;
+}
+
+main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(9) {
+    width: 20px;
+    height: 550px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border: 5px solid #9b9b9b;
+}
+
+main > div:nth-of-type(1) ul:nth-child(2) {
+    background: linear-gradient(to right, #696767, #919191, #9d9696, #8f8e8e, #848282);
+    width: 220px;
+    height: 50px;
+    position: absolute;
+    z-index: 9999;
+    top: 370px;
+    right: 290px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    align-items: center;
+    box-shadow: 5px 5px 9px #4d4d4d;
+}
+
+main > div:nth-of-type(1) ul:nth-child(2) li {
+    width: 16px;
+    height: 16px;
+    background-color: green;
+    box-shadow: 0px 4px 5px #d8d589;
+}
+
+main > div:nth-of-type(1) ul:nth-child(2) li:nth-of-type(3n+2) {
+    width: 30px;
+}
+
+main > div:nth-of-type(1) ul:nth-child(2) li:nth-of-type(-n+2) {
+    width: 20px;
+}
+
+main > div:nth-of-type(1) ul:nth-child(2) li:nth-of-type(2n-2) {
+    background-color: orange;
+}
+
+main > div:nth-of-type(1) ul:nth-child(2) li:nth-of-type(3n+3) {
+    background-color: lightskyblue;
+}
+
+main > div:nth-of-type(1) ul:nth-child(3) {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    position: absolute;
+    width: 140px;
+    height: 80px;
+    background: linear-gradient(to right, #696767, #919191, #9d9696, #8f8e8e, #848282);
+    top: 90px;
     left: 0;
     right: 0;
+    z-index: 999999;
+    transform: perspective(900px) rotateX(328deg);
+    box-shadow: 8px 8px 7px #2f2f2f;
 }
 
-/* EINDE COCKPIT */
+main > div:nth-of-type(1) ul:nth-child(3) li {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    box-shadow: 0px 4px 5px #d8d589;
+}
 
+main > div:nth-of-type(1) ul:nth-child(3) li:nth-of-type(3n+2) {
+    width: 30px;
+    background-color: green;
+}
 
-#derde div{
-    background-color: #90e2f0;
-    width: 100%;
-    height: 170px;
+main > div:nth-of-type(1) ul:nth-child(3) li:nth-of-type(3n+3) {
+    background-color: lightblue;
+}
+
+main > div:nth-of-type(1) ul:nth-child(4) {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
     position: absolute;
-    z-index: 99999;
-    top: 31px;
+    width: 140px;
+    height: 80px;
+    background: linear-gradient(to right, #696767, #919191, #9d9696, #8f8e8e, #848282);
+    top: 90px;
+    left: 350px;
+    right: 0;
+    z-index: 999999;
+    transform: perspective(900px) rotateX(328deg);
+    box-shadow: 8px 8px 7px #2f2f2f;
 }
 
+main > div:nth-of-type(1) ul:nth-child(4) li {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    box-shadow: 0px 4px 5px #d8d589;
+}
 
+main > div:nth-of-type(1) ul:nth-child(4) li:nth-of-type(-n+4) {
+    background-color: #6f6f6f;
+    border: 2px solid #c8c7c7;
+    border-radius: 20px;
+    height: 25px;
+    width: 25px;
+}
 
-input#rad2:checked + #derde div {
-    animation: opstijgAnimatie 30s;
+main > div:nth-of-type(1) ul:nth-child(4) li:nth-of-type(3n+5) {
+    background-color: lightblue;
+}
+
+main > div:nth-of-type(1) ul:nth-child(4) li:nth-of-type(4n+6) {
+    background-color: green;
+}
+
+main > div:nth-of-type(1) ul:nth-child(4) li:nth-of-type(-n+4)::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: red;
+    top: 16px;
+}
+
+main > div:nth-of-type(1) ul:nth-child(5) {
+    display: grid;
+    grid-template-areas: 'hendel1 hendel2 knop knop knop''hendel1 hendel2 knop knop knop';
+    align-items: center;
+    position: absolute;
+    width: 140px;
+    height: 80px;
+    background: linear-gradient(to right, #696767, #919191, #9d9696, #8f8e8e, #848282);
+    top: 90px;
+    left: 0;
+    right: 350px;
+    z-index: 999999;
+    transform: perspective(900px) rotateX(328deg);
+    box-shadow: 8px 8px 7px #2f2f2f;
+}
+
+main > div:nth-of-type(1) ul:nth-child(5) li:nth-child(-n+2) {
+    width: 15px;
+    height: 70px;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    border: 2px solid grey;
+}
+
+main > div:nth-of-type(1) ul:nth-child(5) li:nth-child(1) {
+    grid-area: hendel1;
+}
+
+main > div:nth-of-type(1) ul:nth-child(5) li:nth-child(2) {
+    grid-area: hendel2;
+}
+
+main > div:nth-of-type(1) ul:nth-child(5) li:nth-child(-n+2)::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 7px;
+    background-color: grey;
+    margin-top: 20px;
+}
+
+main > div:nth-of-type(1) ul:nth-child(5) li:nth-child(-n+2):nth-child(2)::before {
+    margin-top: 40px;
+}
+
+main > div:nth-of-type(1) ul:nth-child(5) li:nth-child(n+3) {
+    width: 5px;
+    height: 20px;
+    background: #777777;
+}
+
+main > div:nth-of-type(1) ul:nth-child(5) li:nth-child(n+3)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: gainsboro;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    z-index: -1;
+    margin-left: -3.5px;
+    margin-top: -5px;
+}
+
+    {
+    position: absolute;
+    display: block;
+    background: linear-gradient(to right, #767272, #c7c5c5, #c2c2c2, #878787, #4d4d4d);
+    width: 600px;
+    height: 203px;
+    top: 0;
+    z-index: 9999;
+    left: 0px;
+    right: 0;
+    border-radius: 2500% / 203%;
+    border-left: 5px solid #9b9b9b;
+    border-right: 5px solid #9b9b9b;
+    transform: perspective(900px) rotateX(328deg);
+}
+
+main > div:nth-of-type(1) ul:nth-child(7) {
+    position: absolute;
+    display: grid;
+    grid-template-areas: 'hendel1 hendel2 knop knop knop''hendel1 hendel2 knop knop knop';
+    align-content: center;
+    background: linear-gradient(to right, #272727, #4d4c4c, #2b2929);
+    width: 115px;
+    height: 55px;
+    z-index: 9999;
+    top: 358px;
+    left: 492px;
+    border-radius: 11px;
+    box-shadow: 5px 5px 9px #4d4d4d;
+}
+
+main > div:nth-of-type(1) ul:nth-child(7) li {
+    background-color: #6f6f6f;
+    width: 17px;
+    height: 17px;
+    border-radius: 20px;
+}
+
+main > div:nth-of-type(1) ul:nth-child(7) li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: red;
+    margin-top: 8px;
+    margin-left: 0px;
+}
+
+main > div:nth-of-type(1) ul:nth-child(7) li:nth-child(1) {
+    grid-area: hendel1;
+}
+
+main > div:nth-of-type(1) ul:nth-child(7) li:nth-child(2) {
+    grid-area: hendel2;
+}
+
+main > div:nth-of-type(1) ul:nth-child(7) li:nth-child(-n+2) {
+    width: 5px;
+    height: 50px;
+    background-color: #dcdcdc;
+    border-radius: 12px;
+    margin-right: 6px;
+}
+
+main > div:nth-of-type(1) ul:nth-child(7) li:nth-child(-n+2)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 11px;
+    background-color: #5b5b5b;
+    margin-top: 13px;
+    margin-left: -6px;
+}
+
+main > div:nth-of-type(1) ul:nth-child(8) {
+    position: absolute;
+    display: block;
+    align-content: center;
+    background: linear-gradient(145deg, #5f5f5f, #cccccc);
+    width: 100px;
+    height: 45px;
+    z-index: 9999;
+    top: 376px;
+    left: 180px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 9px #4d4d4d;
+}
+
+main > div:nth-of-type(1) ul:nth-child(8) li:nth-child(1) {
+    width: 87%;
+    height: 80%;
+    background-color: #373737;
+    border-radius: 6px;
+    margin-top: 4px;
+}
+
+main > div:nth-of-type(1) ul:nth-child(8) li:nth-child(2) {
+    width: 5px;
+    height: 5px;
+    background-color: #5dee02;
+    top: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+}
+
+main > div:nth-of-type(1) ul:nth-child(8) li:nth-child(3) {
+    width: 20px;
+    height: 20px;
+    background: none;
+    top: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    border: 2px solid #5dee02;
+    animation: radarAnimatie 1s infinite;
+}
+
+@keyframes radarAnimatie {
+    0% {
+        width: 10px;
+        height: 10px;
+        top: 10px;
+    }
+
+    50% {
+        width: 30px;
+        height: 30px;
+        top: 6px;
+    }
+
+    100% {
+        width: 30px;
+        height: 30px;
+        top: 6px;
+    }
+}
+
+main > div:nth-of-type(2) {
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    z-index: -2;
+}
+
+main > div:nth-of-type(2) div ul:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    background-color: var(--luchtKleur);
+}
+
+main > div:nth-of-type(2) div ul:nth-child(1) li:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(358deg, var(--groen1) 50%, var(--groen2) 60%);
+    top: 130px;
+}
+
+main > div:nth-of-type(2) div ul:nth-child(1) li:nth-child(2) {
+    position: absolute;
+    width: 60%;
+    height: 600px;
+    background: linear-gradient(290deg, #494949 27%, #353535 41%);
+    top: -120px;
+    left: 0;
+    right: 0;
+    transform: perspective(900px) rotateX(77deg);
+}
+
+main > div:nth-of-type(2) div ul:nth-child(1) li:nth-child(2)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #ffff;
+    width: 20px;
+    height: 100%;
+    left: 70px;
+}
+
+main > div:nth-of-type(2) div ul:nth-child(1) li:nth-child(2)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #ffff;
+    width: 20px;
+    height: 100%;
+    right: 70px;
+}
+
+main > div:nth-of-type(2) div ul:nth-child(2) {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -100px;
+}
+
+main > div:nth-of-type(2) div ul:nth-child(2) li {
+    background-color: #ffff;
+    width: 50px;
+    height: 200px;
+    margin: 0px auto;
+    transform: perspective(900px) rotateX(77deg);
+}
+
+main > div:nth-of-type(3) {
+    background-color: var(--luchtKleur);
+    position: absolute;
+    width: 100%;
+    height: 91px;
+    top: 150px;
+    z-index: -1;
+}
+
+main > div:nth-of-type(3) div {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+main > div:nth-of-type(3) div ul {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+}
+
+main > div:nth-of-type(3) div ul li {
+    position: absolute;
+    background-color: var(--wolkKleur);
+    width: 60px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+main > div:nth-of-type(3) div ul:nth-child(1) {
+    left: 300px;
+    top: 30px;
+    animation: wolkenAnimatie1 23s infinite;
+    animation-timing-function: linear;
+}
+
+main > div:nth-of-type(3) div ul:nth-child(2) {
+    right: 300px;
+    top: 30px;
+    animation: wolkenAnimatie2 20s infinite;
+    animation-timing-function: linear;
+}
+
+main > div:nth-of-type(3) div ul:nth-child(3) {
+    left: 0px;
+    right: 0px;
+    top: 20px;
+    animation: wolkenAnimatie3 3s infinite;
+    animation-timing-function: linear;
+}
+
+main > div:nth-of-type(3) div ul li:nth-child(1) {
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+main > div:nth-of-type(3) div ul li:nth-child(2) {
+    right: 50px;
+    bottom: 0;
+}
+
+main > div:nth-of-type(3) div ul li:nth-child(3) {
+    left: 40px;
+    bottom: 0;
+}
+
+@keyframes wolkenAnimatie1 {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 90%;
+        top: 300px;
+    }
+}
+
+@keyframes wolkenAnimatie2 {
+    0% {
+        right: 0px;
+    }
+
+    100% {
+        right: 90%;
+        top: 300px;
+    }
+}
+
+main > div:nth-of-type(4) {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 320px;
+}
+
+main > div:nth-of-type(4) ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+main > div:nth-of-type(4) ul li {
+    width: 380px;
+    height: 4px;
+    background-color: var(--grijs);
+    border: 1px solid black;
+    position: absolute;
+    bottom: 12px;
+    transform: rotate(358deg);
+    z-index: -1;
+    box-shadow: 5px 5px 8px #000000;
+}
+
+main > div:nth-of-type(4) ul li:nth-child(1) {
+    left: 225px;
+    bottom: 7px;
+}
+
+main > div:nth-of-type(4) ul li:nth-child(2) {
+    right: 325px;
+}
+
+input#rad1:checked ~ main div div ul:nth-child(2) {
+    animation: gasAnimatie 2s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes gasAnimatie {
+    0% {
+        top: -1500px;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+input#rad1:checked + input#rad2:checked + main #opstijgen {
+    animation: opstijgAnimatie 15s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
 }
 
 @keyframes opstijgAnimatie {
     0% {
-        height: 170px;
+        height: 90px;
+    }
+
+    5% {}
+
+    10% {}
+
+    15% {}
+
+    20% {
+        top: 50px;
+        height: 430px;
+        transform: rotate(0deg);
+        background-color: var(--luchtKleur);
+    }
+
+    25% {
+        top: 50px;
+        transition: 1s;
+        background: url("https://wallpaperaccess.com/full/138674.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        width: 1400px;
+        transform: perspective(900px) rotateX(23deg)
+    }
+
+    16% {
+        top: 50px;
+        height: 400px;
+    }
+
+    18% {
+        transform: rotate(0deg);
+        top: 50px;
+        height: 500px;
+    }
+
+    25% {
+        transform: rotate(2deg);
+    }
+
+    30% {
+        transform: rotate(0deg);
+    }
+
+    60% {
+        margin-top: 100px;
+    }
+
+    70% {
+        margin-top: -200px;
     }
 
     100% {
+        margin-top: 100px;
+        background: url("https://wallpaperaccess.com/full/138674.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 50px;
         height: 1000px;
     }
 }
 
-
-input#rad1:checked + #eerste div:nth-child(2) ul:nth-child(2) {
-    animation: landingsbaanOpstijgen 2s infinite;
-
+input#rad3:checked + div {
+    animation: draaiAnimatieRechts 3s;
+    animation-fill-mode: forwards;
 }
 
-@keyframes landingsbaanOpstijgen {
+@keyframes draaiAnimatieRechts {
     0% {
-        top: -1500px;
+        transform: rotate(0deg);
+        width: 100%;
     }
-    
-    50%{
-        top: 0px;
-    }
-    
+
+    50% {}
+
     100% {
-        top: -1500px;
+        transform: rotate(9deg);
     }
+}
+
+input#rad4:checked + div ul li {
+    animation: ruitenwisserAnimatie 1s infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ruitenwisserAnimatie {
+    0% {
+        transform: rotate(358deg);
+    }
+
+    50% {
+        transform: rotate(232deg);
+    }
+
+    100% {
+        transform: rotate(358deg);
+    }
+}
+
+main > div:nth-of-type(1) div {
+    position: absolute;
+    top: 380px;
+    right: 0;
+    left: 0;
+    color: white;
+    background-color: #494949;
+    width: 95%;
+    height: 180px;
+    z-index: 999;
+    transform-style: preserve-3d;
+    perspective: 30em;
+}
+
+main > div:nth-of-type(1) div:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 94px;
+    top: -29px;
+    border-radius: 285% / 200%;
+    background-color: #6f6f6f;
+    z-index: -999999;
+    border-bottom: 10px solid #605d5d;
+    box-shadow: 0px 20px 18px #282828;
+}
+
+main > div:nth-of-type(1) div:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 260px;
+    top: 65px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #6f6f6f;
+    z-index: -999999;
+    transform: perspective(900px) rotateX(180deg);
+    border-right: 7px solid #5f5d5d;
+    border-left: 7px solid #5f5d5d;
+}
+
+main > div:nth-of-type(1) div section {
+    width: 150px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
+    transform-style: preserve-3d;
+    transform: rotatex(30deg);
+}
+
+main > div:nth-of-type(1) div section span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 95px;
+    background: linear-gradient(to right, #1c1c1c, #3f3f3f, #636363, #3f3f3f, #1c1c1c);
+    padding: 7px 30px;
+    border-radius: 10px;
+}
+
+#rad1label {
+    display: block;
+    width: 7em;
+    height: 8em;
+    transform-style: preserve-3d;
+    top: 50px;
+    left: 0;
+    right: 0;
+    cursor: grabbing;
+    z-index: 99999999;
+    position: absolute;
+    transform: scale(0.9);
+}
+
+#rad1label:before {
+    content: "";
+    position: absolute;
+    left: 1em;
+    top: 0px;
+    height: 8em;
+    width: 5em;
+    background-image: linear-gradient(to right, grey, white, grey, darkgrey, grey 1em, transparent 0em 4em, grey 4em, white, grey, darkgrey, grey);
+    transform-origin: center bottom;
+    transform: rotatex(-60deg);
+    transition: .5s;
+}
+
+#rad1label:after {
+    content: "";
+    position: absolute;
+    width: 7em;
+    height: 7em;
+    z-index: 2;
+    left: 0em;
+    transform-origin: center bottom;
+    transform: rotatex(-60deg);
+    transition: .5s;
+    border-top: 1.5em solid #88031c;
+    border-radius: 15px;
+}
+
+#rad1:checked ~ main #rad1label:before,
+#rad1:checked ~ main #rad1label:after {
+    transform: rotatex(-20deg);
+}
+
+main > div:nth-of-type(1) div label:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    background-color: #373737;
+    left: 320px;
+    top: 8px;
+    border-radius: 40px;
+    cursor: grabbing;
+}
+
+main > div:nth-of-type(1) div label:nth-child(2) span:nth-child(1) {
+    background-color: #373737;
+    position: absolute;
+    display: block;
+    width: 62px;
+    height: 20px;
+    top: 20px;
+    right: 35px;
+    transform: rotate(355deg)
+}
+
+main > div:nth-of-type(1) div label:nth-child(2) span:nth-child(2) {
+    background-color: #373737;
+    position: absolute;
+    display: block;
+    width: 62px;
+    height: 20px;
+    top: 20px;
+    left: 35px;
+    transform: rotate(5deg)
+}
+
+main > div:nth-of-type(1) div label:nth-child(2) span:nth-child(3) {
+    background-color: #373737;
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 70px;
+    top: -35px;
+    left: -40px;
+    transform: rotate(355deg);
+}
+
+main > div:nth-of-type(1) div label:nth-child(2) span:nth-child(3)::before {
+    content: "";
+    background-color: #373737;
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 18px;
+    left: 20px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+main > div:nth-of-type(1) div label:nth-child(2) span:nth-child(4) {
+    background-color: #373737;
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 70px;
+    top: -35px;
+    right: -40px;
+    transform: rotate(5deg);
+}
+
+main > div:nth-of-type(1) div label:nth-child(2) span:nth-child(4)::before {
+    content: "";
+    background-color: #373737;
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 18px;
+    right: 20px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+main > div:nth-of-type(1) div label:nth-child(2):active {
+    transform: perspective(900px) rotateX(322deg);
+}
+
+main > div:nth-of-type(1) div label:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 710px;
+    top: -13px;
+    font-size: 0.2em;
+    background: linear-gradient(145deg, #5f5f5f, #cccccc);
+    border: 3px solid #959494;
+    box-shadow: 5px 5px 9px #4d4d4d;
+    border-radius: 80px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: black;
+    cursor: move;
+}
+
+main > div:nth-of-type(1) div label:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 770px;
+    top: -13px;
+    font-size: 0.2em;
+    background: linear-gradient(145deg, #5f5f5f, #cccccc);
+    border: 3px solid #959494;
+    box-shadow: 5px 5px 9px #4d4d4d;
+    border-radius: 80px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: black;
+    cursor: move;
+}
+
+main > div:nth-of-type(1) div label:nth-child(5) {
+    position: absolute;
+    left: 590px;
+    height: 55px;
+    width: 90px;
+    text-align: center;
+    font-size: 0.7em;
+    top: -22px;
+    background: linear-gradient(to right, #272727, #4d4c4c, #2b2929);
+    border-radius: 11px;
+    box-shadow: 5px 5px 9px #4d4d4d;
+}
+
+main > div:nth-of-type(1) div label:nth-child(5)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 33px;
+    background-color: #00b8ff;
+    left: 10px;
+    top: 14px;
+}
+
+main > div:nth-of-type(1) div label:nth-child(5)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 17px;
+    background-color: #ffbc00;
+    left: 10px;
+    bottom: 8px;
+}
+
+main > div:nth-of-type(1) div label:nth-child(6) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 60px;
+    top: -3px;
+    font-size: 0.2em;
+    background: linear-gradient(145deg, #5f5f5f, #cccccc);
+    border: 3px solid #959494;
+    box-shadow: 5px 5px 9px #4d4d4d;
+    border-radius: 80px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: black;
+    cursor: move;
+}
+
+input#rad5:checked + div {
+    display: block;
+    position: absolute;
+    width: 75%;
+    height: 0px;
+    top: 380px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: red;
+    z-index: -1;
+    box-shadow: 0 0 100px 60px #f4f2bdd4, 0 0 140px 90px #e4e8d1;
+    transform: perspective(900px) rotateX(43deg);
 }
