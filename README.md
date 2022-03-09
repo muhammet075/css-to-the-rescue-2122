@@ -3,7 +3,8 @@
 Voor het eindopdracht voor het vak CSS To The Rescue heb ik de case 'Stijlvast bedieningspaneel' gekozen. Ik heb een interactieve funcitonerende vliegtuig cockpit gemaakt met pure HTML en CSS. Voor dit project is 0 code JavaScript gebruikt. De gebruiker kan gas geven, opstijgen, verlichting aan/uit zetten, vliegtuig laten draaien en de ruitenwissers aan/uit zetten.
 
 <img src="https://i.ibb.co/qgnBRfm/cockpit1.png" alt="cockpit" width="700px"/><br/>
-
+<br/>
+<hr/>
 
 ### Week 1
 Tijdens de eerste week van het vak had ik besloten om de bedieningspaneel case te kiezen. Ik dacht er aan om een interface te bouwen waarbij de gebruiker een object kan bedienen. Toen besloot ik om een vliegtuig cockpit te gaan bouwen. Na mijn besluit ging ik aan de slag met het knutselen van het vliegtuig in CSS. De cockpit is een div met daarin verschillende ul'letjes en de li's zijn de ramen om naar buiten te kijken. Ook had ik een begin gemaakt aan de animaties, ik was bezig met het opstijging proces.<br/>
