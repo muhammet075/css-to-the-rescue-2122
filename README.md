@@ -12,7 +12,7 @@ Tijdens de eerste week van het vak had ik besloten om de bedieningspaneel case t
 In week 2 ben ik verder gaan animeren en gaan stijlen van de cockpit. Ik heb met keyframes geanimeerd dat je gas kan geven op de landingsbaan en vervolgens met een stuur kan opstijgen. Ook heb ik genimeerd dat het vliegtuig kan draaien en de ruitenwissers aan kan zetten. Ik heb ook een begin gemaakt aan de stijling van de cockpit, ik heb de gashendel, stuur, hoogtemeter enz gemaakt. Alleen ik vind dat het nog mooier kan en in week 3 ga ik het nog mooier stijlen. Ik wil in week 3 ook  ervoor zorgen dat de hoogmeter ook werkt tijdens het opstijg proces en ik wil er ook voor zorgen dat het vliegtuig kan landen, maar dat komt wel in week 3.
 
 ### Week 3
-Voorjaars reces
+-- Voorjaarsreces --
 
 ### Week 4
 In de laaste week heb ik het project verder afgemaakt. Ik heb de opstijg proces afgemaakt en ik heb de knoppen en bedieningspaneel van het vliegtuig meer een skeurmofisch (realistischer) design gegeven. Bijvoorbeeld knopjes met diepte, kleuren wat lijkt op echt metaal enz.
