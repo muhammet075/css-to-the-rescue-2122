@@ -21,7 +21,8 @@ In week 2 ben ik verder gaan animeren en gaan stijlen van de cockpit. Ik heb met
 <hr/>
 
 ### Week 4
-In de laaste week heb ik het project verder afgemaakt. Ik heb de opstijg proces afgemaakt en ik heb de knoppen en bedieningspaneel van het vliegtuig meer een skeurmofisch (realistischer) design gegeven. Bijvoorbeeld knopjes met diepte, kleuren wat lijkt op echt metaal enz.
+In de laaste week heb ik het project verder afgemaakt. Ik heb de opstijg proces afgemaakt en ik heb de knoppen en bedieningspaneel van het vliegtuig meer een skeurmofisch (realistischer) design gegeven. Bijvoorbeeld knopjes met diepte, kleuren wat lijkt op echt metaal enz.<br/>
+<img src="https://i.ibb.co/qgnBRfm/cockpit1.png" alt="700px" alt="cockpit"><br/>
 
 
 <br/><br/>
