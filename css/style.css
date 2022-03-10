@@ -2,15 +2,14 @@
     --luchtKleur: skyblue;
     --wolkKleur: #ffffffcf;
     --wit: #ffff;
-    --zwart: hotpink;
-    --paars: #474787;
-    --lichtpaars: #8484cd;
-    --grijs: #999999;
+    --zwart: #000;
+    --grijs: #6f6f6f;
     --lichtgrijs: #efefef;
     --donkergrijs: #494949;
-    --middengrijs: #4d4d4d;
+    --middengrijs: #9b9b9b;
     --groen1: #3a9d09;
     --groen2: #41ab0c;
+    --opstijgAchtergrond: url("https://c1.wallpaperflare.com/preview/842/660/959/city-cityscape-urban-building.jpg");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +18,7 @@
         --wolkKleur: #232323d9;
         --groen1: #174501;
         --groen2: #1e5304;
+        --opstijgAchtergrond: url("https://wallpaperaccess.com/full/138674.jpg");
     }
 }
 
@@ -57,7 +57,7 @@ main > div:nth-of-type(1)::before {
     position: absolute;
     width: 130px;
     height: 800px;
-    background-color: #494949;
+    background-color: var(--donkergrijs);
     left: -80px;
     top: -100px;
     z-index: 9999999;
@@ -69,7 +69,7 @@ main > div:nth-of-type(1)::after {
     position: absolute;
     width: 130px;
     height: 800px;
-    background-color: #494949;
+    background-color: var(--donkergrijs);
     right: -80px;
     top: -100px;
     z-index: 9999999;
@@ -85,7 +85,7 @@ main > div:nth-of-type(1) ul:nth-child(1)::after {
     position: absolute;
     width: 50px;
     height: 50px;
-    background-color: #494949;
+    background-color: var(--donkergrijs);
     left: 0;
     top: 100px;
     z-index: 9999999;
@@ -108,14 +108,15 @@ main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(2) {
     top: -168px;
     border-radius: 500% / 203%;
     z-index: 9999;
-    border-bottom: 7px solid #9b9b9b;
+    border-bottom: 7px solid var(--middengrijs)
 }
 
-main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(3) {
+main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(3) {   
     margin: auto;
-    width: 100%;
-    height: 1000px;
+    width: 110%;
+    height: 1700px;
     top: 400px;
+    margin-left: -50px;
 }
 
 main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(4) {
@@ -130,7 +131,7 @@ main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(5) {
     height: 500px;
     top: 0px;
     left: 0;
-    border-right: 5px solid #9b9b9b;
+    border-right: 5px solid var(--middengrijs)
 }
 
 main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(6) {
@@ -138,7 +139,7 @@ main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(6) {
     height: 500px;
     top: 0px;
     right: 0;
-    border-left: 5px solid #9b9b9b;
+    border-left: 5px solid var(--middengrijs)
 }
 
 main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(7) {
@@ -147,7 +148,7 @@ main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(7) {
     top: 0px;
     right: 250px;
     transform: rotate(5deg);
-    border: 5px solid #9b9b9b;
+    border: 5px solid var(--middengrijs)
 }
 
 main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(8) {
@@ -156,7 +157,7 @@ main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(8) {
     top: 0px;
     left: 250px;
     transform: rotate(355deg);
-    border: 5px solid #9b9b9b;
+    border: 5px solid var(--middengrijs)
 }
 
 main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(9) {
@@ -165,7 +166,7 @@ main > div:nth-of-type(1) ul:nth-child(1) li:nth-child(9) {
     top: 0px;
     left: 0px;
     right: 0px;
-    border: 5px solid #9b9b9b;
+    border: 5px solid var(--middengrijs)
 }
 
 main > div:nth-of-type(1) ul:nth-child(2) {
@@ -261,7 +262,7 @@ main > div:nth-of-type(1) ul:nth-child(4) li {
 }
 
 main > div:nth-of-type(1) ul:nth-child(4) li:nth-of-type(-n+4) {
-    background-color: #6f6f6f;
+    background-color: var(--grijs);
     border: 2px solid #c8c7c7;
     border-radius: 20px;
     height: 25px;
@@ -361,8 +362,8 @@ main > div:nth-of-type(1) ul:nth-child(5) li:nth-child(n+3)::before {
     left: 0px;
     right: 0;
     border-radius: 2500% / 203%;
-    border-left: 5px solid #9b9b9b;
-    border-right: 5px solid #9b9b9b;
+    border-left: 5px solid var(--middengrijs)
+    border-right: 5px solid var(--middengrijs)
     transform: perspective(900px) rotateX(328deg);
 }
 
@@ -382,7 +383,7 @@ main > div:nth-of-type(1) ul:nth-child(7) {
 }
 
 main > div:nth-of-type(1) ul:nth-child(7) li {
-    background-color: #6f6f6f;
+    background-color: var(--grijs);
     width: 17px;
     height: 17px;
     border-radius: 20px;
@@ -529,7 +530,7 @@ main > div:nth-of-type(2) div ul:nth-child(1) li:nth-child(2)::before {
     content: "";
     display: block;
     position: absolute;
-    background-color: #ffff;
+    background-color: var(--wit);
     width: 20px;
     height: 100%;
     left: 70px;
@@ -539,7 +540,7 @@ main > div:nth-of-type(2) div ul:nth-child(1) li:nth-child(2)::after {
     content: "";
     display: block;
     position: absolute;
-    background-color: #ffff;
+    background-color: var(--wit);
     width: 20px;
     height: 100%;
     right: 70px;
@@ -553,7 +554,7 @@ main > div:nth-of-type(2) div ul:nth-child(2) {
 }
 
 main > div:nth-of-type(2) div ul:nth-child(2) li {
-    background-color: #ffff;
+    background-color: var(--wit);
     width: 50px;
     height: 200px;
     margin: 0px auto;
@@ -709,12 +710,6 @@ input#rad1:checked + input#rad2:checked + main #opstijgen {
         height: 90px;
     }
 
-    5% {}
-
-    10% {}
-
-    15% {}
-
     20% {
         top: 50px;
         height: 430px;
@@ -725,7 +720,7 @@ input#rad1:checked + input#rad2:checked + main #opstijgen {
     25% {
         top: 50px;
         transition: 1s;
-        background: url("https://wallpaperaccess.com/full/138674.jpg");
+        background: var(--opstijgAchtergrond);
         background-repeat: no-repeat;
         background-size: cover;
         height: 700px;
@@ -762,7 +757,7 @@ input#rad1:checked + input#rad2:checked + main #opstijgen {
 
     100% {
         margin-top: 100px;
-        background: url("https://wallpaperaccess.com/full/138674.jpg");
+        background: var(--opstijgAchtergrond);
         background-repeat: no-repeat;
         background-size: cover;
         top: 50px;
@@ -813,7 +808,7 @@ main > div:nth-of-type(1) div {
     right: 0;
     left: 0;
     color: white;
-    background-color: #494949;
+    background-color: var(--donkergrijs);
     width: 95%;
     height: 180px;
     z-index: 999;
@@ -829,7 +824,7 @@ main > div:nth-of-type(1) div:before {
     height: 94px;
     top: -29px;
     border-radius: 285% / 200%;
-    background-color: #6f6f6f;
+    background-color: var(--grijs);
     z-index: -999999;
     border-bottom: 10px solid #605d5d;
     box-shadow: 0px 20px 18px #282828;
@@ -845,7 +840,7 @@ main > div:nth-of-type(1) div:after {
     left: 0;
     right: 0;
     margin: auto;
-    background-color: #6f6f6f;
+    background-color: var(--grijs);
     z-index: -999999;
     transform: perspective(900px) rotateX(180deg);
     border-right: 7px solid #5f5d5d;
