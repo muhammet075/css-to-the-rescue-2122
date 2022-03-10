@@ -24,6 +24,7 @@ Voor het eindopdracht voor het vak CSS To The Rescue heb ik de case 'Stijlvast b
 <br/>
 
 <hr/>
+
 ## Proces
 
 ### Week 1
