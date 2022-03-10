@@ -6,6 +6,27 @@ Voor het eindopdracht voor het vak CSS To The Rescue heb ik de case 'Stijlvast b
 <br/>
 <hr/>
 
+## Installeren
+1. Clone de repository<br/>
+```
+  git clone https://github.com/muhammet075/css-to-the-rescue-2122/
+```
+
+2. Navigeer naar het project<br/>
+```
+ /css-to-the-rescue-2122/index.html
+```
+
+3. Open het met je localhost of je text editor<br/>
+<br/>
+
+## Live Demo 🚀
+<a href="https://muhammet075.github.io/css-to-the-rescue-2122/">https://muhammet075.github.io/css-to-the-rescue-2122/</a>
+<br/>
+
+<hr/>
+## Proces
+
 ### Week 1
 Tijdens de eerste week van het vak had ik besloten om de bedieningspaneel case te kiezen. Ik dacht er aan om een interface te bouwen waarbij de gebruiker een object kan bedienen. Toen besloot ik om een vliegtuig cockpit te gaan bouwen. Na mijn besluit ging ik aan de slag met het knutselen van het vliegtuig in CSS. De cockpit is een div met daarin verschillende ul'letjes en de li's zijn de ramen om naar buiten te kijken. Ook had ik een begin gemaakt aan de animaties, ik was bezig met het opstijging proces.<br/>
 <img src="https://i.ibb.co/tBbGCqL/Schermafbeelding-2022-02-18-om-12-02-17.png" width="500px" alt="cockpit"/>
